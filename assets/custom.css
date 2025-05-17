@@ -1,0 +1,128 @@
+/* General styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Logo styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.car-logo {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 20px 5px 5px 20px;
+    margin-right: 5px;
+}
+
+.car-logo::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    right: 8px;
+    width: 22px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+}
+
+.car-logo::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: #2c3e50;
+    border-radius: 50%;
+    box-shadow: 20px 0 0 #2c3e50;
+}
+
+.logo-text {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.custom-navbar {
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Card styling */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    font-weight: 600;
+}
+
+/* Container padding */
+.container {
+    padding: 20px;
+}
+
+/* Graph styling */
+.js-plotly-plot {
+    margin-top: 15px;
+}
+
+/* Dropdown styling */
+.Select-control {
+    border-radius: 5px;
+}
+
+/* Range slider styling */
+.rc-slider-track {
+    background-color: #2c3e50;
+}
+
+.rc-slider-handle {
+    border-color: #2c3e50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    
+    .car-logo {
+        width: 30px;
+        height: 15px;
+    }
+    
+    .car-logo::before {
+        top: -6px;
+        right: 6px;
+        width: 16px;
+        height: 12px;
+    }
+    
+    .car-logo::after {
+        bottom: 2px;
+        left: 6px;
+        width: 6px;
+        height: 6px;
+        box-shadow: 15px 0 0 #2c3e50;
+    }
+} 
