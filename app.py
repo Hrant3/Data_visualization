@@ -9,6 +9,9 @@ app = dash.Dash(__name__,
                 external_stylesheets=[dbc.themes.FLATLY],
                 use_pages=True)
 
+# Define the server for deployment
+server = app.server
+
 # Load the data
 df = pd.read_csv('MARKET_Car_Prices.csv')
 
